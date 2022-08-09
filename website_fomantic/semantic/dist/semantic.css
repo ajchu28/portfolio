@@ -659,9 +659,31 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
          Site Overrides
 *******************************/
 
+/****** Fonts ******/
+
 @font-face {
   font-family: 'Geneva';
-  src: url('themes/basic/assets/fonts/geneva/normal.ttf');
+  src: url('themes/ACportfolio/assets/fonts/geneva/normal.ttf');
+}
+
+@font-face {
+  font-family: 'GenevaBoldItalic';
+  src: url('themes/ACportfolio/assets/fonts/geneva/Geneva Bold-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'GenevaItalic';
+  src: url('themes/ACportfolio/assets/fonts/geneva/Geneva Normal-Italic.ttf');
+}
+
+/****** Text ******/
+
+a {
+  color: #1F2769;
+}
+
+a:hover {
+  color: #182596;
 }
 /*!
  * # Fomantic-UI 2.8.8 - Button
