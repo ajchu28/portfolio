@@ -1,0 +1,28 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+/****** Fonts ******/
+@font-face  {
+    font-family: 'Geneva';
+    src:url('themes/ACportfolio/assets/fonts/geneva/normal.ttf'); 
+}
+
+@font-face  {
+    font-family: 'GenevaBoldItalic';
+    src:url('themes/ACportfolio/assets/fonts/geneva/Geneva Bold-Italic.ttf'); 
+}
+
+@font-face  {
+    font-family: 'GenevaItalic';
+    src:url('themes/ACportfolio/assets/fonts/geneva/Geneva Normal-Italic.ttf'); 
+}
+
+/****** Text ******/
+a {
+  color: @link-color;
+}
+
+a:hover {
+  color: @link-hover-color;
+}

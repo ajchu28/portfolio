@@ -1,0 +1,83 @@
+/************************** Website Styling *************************/
+
+/************************** General *************************/
+
+/************************** Menu *************************/
+#right_menu_padding {
+    padding: 10px;
+}
+
+#left_menu_padding {
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+/************************** Home Allie Blurb *************************/
+.allie_blurb.content {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 40%;
+}
+
+/************************** Home Page Content *************************/
+.mainbody {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.home_header {
+    margin-top: 30%;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+#text_right {
+    text-align: right;
+}
+
+#image_right {
+    padding: 10px;
+}
+
+#casestudy_link {
+    text-align: right;
+    margin-top: 20px;
+    color: #1F2769;
+    font-size: 12pt;
+}
+
+/* Mobile */
+@media only screen and (max-width:992px) {
+    .allie_blurb.content {
+        margin-top: 0;
+    }
+
+    .home_header {
+        margin-top: 0px;
+    }
+
+    /* #reorder div:first-child {
+        order: 2;
+    } */
+}
+
+/************************** About Page Content *************************/
+#about_header_space {
+    margin-top: 50px;
+}
+
+
+/************************** Case Studies *************************/
+.image_divider {
+    padding: 10px
+}
+
+#caption {
+    margin-top: 5px;
+    text-align: center;
+}
+
+#website_link {
+    color: #1F2769;
+}
