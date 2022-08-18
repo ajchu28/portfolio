@@ -12,64 +12,106 @@
         <!-- Fomantic UI -->
         <link rel="stylesheet" type="text/css" href="website_fomantic/semantic/dist/semantic.min.css">
 
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
     </head>
 
     <body>
         <!-- Banner -->
-        <img class="ui centered img" src="assets/webbanner.png">
+        <div class="banner"></div>
 
         <!-- Navigation Menu -->
-        <!-- <div id="header"></div> -->
-        <div class ="ui secondary menu" id="navmenu">
-            <a class="item" id="left_menu_padding">Allie Chu</a>
+        <div class ="ui secondary menu">
+            <div class="left_menu_padding">
+                <p>Allie Chu</p>
+            </div>
 
-            <div class="right menu" id="right_menu_padding">
+            <div class="right menu right_menu_padding">
                 <a class="active item" href="index.html">Home</a>
                 <a class="item" href="about.html">About</a>
             </div>
 
-    <!-- <a class="code popup icon item">
-        <i class="code icon"></i>
-    </a>
-    <a class="pen popup icon item">
-        <i class="pen icon"></i>
-    </a> -->
+            <!-- <a class="code popup icon item">
+                <i class="code icon"></i>
+            </a>
+            <a class="pen popup icon item">
+                <i class="pen icon"></i>
+            </a> -->
         </div>
 
         <!-- Body -->
-        <div class="ui grid container">
+        <div class="ui container">
             <div class="ui stackable two column grid">
                 <div class="row">
                     <div class="column">
                         <img class="ui fluid image" src="assets/allie.png">
                     </div>
-                    <div class="column">
-                        <div class="allie_blurb content">Allie Chu is an aspiring UX Designer who is currently a fourth year at University of Chicago studying Computer Science and Media Arts and Design.</div>
+                    <div class="column column_flex">
+                        <div class="allie_blurb content">Allie Chu is an aspiring UX Developer who is currently a fourth year at the University of Chicago studying Computer Science and Media Arts and Design.</div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="ui divider"></div>
+        <div class="spacer"></div>
 
-        <div class="ui grid container">
-            <div class="ui stackable two column grid">
-                <div class="row" id="reorder">
-                    <div class="column">
-                        <div class="home_header" id="text_right">Gentrification and Social Mixing</div>
-                        <div class="mainbody" id="text_right">Designing and building an interactive map to visualize the effects of gentrification in Chicago.</div>
-                        <a href="gentrification.html">
-                            <div class="ui small header" id="casestudy_link">
-                                Visit Case Study
-                                <i class="long arrow alternate right icon"></i>
+        <div class="case_study_section">
+            <div class="ui container">
+                <div class="ui stackable two column grid">
+                    <div class="row two_wide_feature">
+                        <div class="column column_flex">
+                            <div class="column_content">
+                                <div class="home_header">Gentrification and Social Mixing</div>
+                                <div class="mainbody text_padding">Designing and building an interactive map to visualize the effects of gentrification in Chicago.</div>
+                                <a href="gentrification.html">
+                                    <div class="ui small header casestudy_link">
+                                        Visit Case Study
+                                        <i class="long arrow alternate right icon"></i>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
+                        </div>
+                        <div class="column">
+                            <img src="assets/map.png">
+                        </div>
                     </div>
-                    <div class="column">
-                        <img class="ui fluid image large" id="image_right" src="assets/map.png">
+                </div>
+            </div>
+    
+            <div class="spacer"></div>
+    
+            <div class="ui container">
+                <div class="ui stackable two column grid reorder">
+                    <div class="row two_wide_feature">
+                        <div class="column">
+                            <img src="assets/map.png">
+                        </div>
+                        <div class="column column_flex">
+                            <div class="column_content text_right">
+                                <div class="home_header">Gentrification and Social Mixing</div>
+                                <div class="mainbody text_padding">Designing and building an interactive map to visualize the effects of gentrification in Chicago.</div>
+                                <a href="gentrification.html">
+                                    <div class="ui small header casestudy_link">
+                                        Visit Case Study
+                                        <i class="long arrow alternate right icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </body>
+
+    <footer>
+        <div class="footer">
+            <a href="https://www.linkedin.com/in/allie-chu-946999122/">
+                <img class="icon" src="assets/linkedin.png">
+            </a>
+            <a href="mailto: alliechu@gmail.com">
+                <img class="icon" style="max-height: 60px;" src="assets/email.png">
+            </a>
+        </div>
+    </footer>
 </html>

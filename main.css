@@ -3,21 +3,25 @@
 /************************** General *************************/
 
 /************************** Menu *************************/
-#right_menu_padding {
+.right_menu_padding {
     padding: 10px;
 }
 
-#left_menu_padding {
+.left_menu_padding {
     font-size: 20px;
     padding: 10px;
-    margin-left: 20px;
+    margin-left: 30px;
+}
+
+.banner {
+    background-image: linear-gradient(to right, #353A70, #EDDADA);
+    height: 15px;
 }
 
 /************************** Home Allie Blurb *************************/
 .allie_blurb.content {
     font-size: 20px;
     line-height: 30px;
-    margin-top: 40%;
 }
 
 /************************** Home Page Content *************************/
@@ -27,28 +31,54 @@
 }
 
 .home_header {
-    margin-top: 30%;
     font-size: 24px;
-    line-height: 40px;
+    line-height: 30px;
 }
 
-#text_right {
-    text-align: right;
+.case_study_section {
+    padding-top: 100px;
+    background-color: #F5F5F5;
+    padding-bottom: 100px;
 }
 
-#image_right {
-    padding: 10px;
+/* Two Wide Component */
+.two_wide_feature {
+    background-color: #FFFFFF;
+    box-shadow: 3px 3px 10px 0px rgba(138,138,138,0.59);
 }
 
-#casestudy_link {
-    text-align: right;
-    margin-top: 20px;
-    color: #1F2769;
+.column_content {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.text_right {
+    margin-left: 0px;
+}
+
+.column.column_flex {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text_padding {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.casestudy_link {
+    color: #1F2769 !important;
     font-size: 12pt;
 }
 
+.spacer {
+    height: 60px;
+}
+
 /* Mobile */
-@media only screen and (max-width:992px) {
+@media only screen and (max-width:767.98px) {
     .allie_blurb.content {
         margin-top: 0;
     }
@@ -57,13 +87,31 @@
         margin-top: 0px;
     }
 
-    /* #reorder div:first-child {
+    .reorder div:first-child {
         order: 2;
-    } */
+    }
+
+    .text_right {
+        margin-left: 20px;
+    }
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background-image: linear-gradient(to right, #353A70, #EDDADA)
+}
+
+.footer .icon {
+    max-height: 30px;
+    margin: 15px;
 }
 
 /************************** About Page Content *************************/
-#about_header_space {
+.about_header_space {
     margin-top: 50px;
 }
 
@@ -73,11 +121,7 @@
     padding: 10px
 }
 
-#caption {
+.caption {
     margin-top: 5px;
     text-align: center;
-}
-
-#website_link {
-    color: #1F2769;
 }

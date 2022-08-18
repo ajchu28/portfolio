@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <title>About</title>
         <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 
         <!-- Custom Styling -->
         <link rel="stylesheet" type="text/css" href="main.css">
@@ -25,15 +26,17 @@
 
     <body>
         <!-- Banner -->
-        <img class="ui centered img" src="assets/webbanner.png">
+        <div class="banner"></div>
 
         <!-- Navigation Menu -->
-        <div class ="ui secondary menu" id="navmenu">
-            <a class="item" id="left_menu_padding" href="index.html">Allie Chu</a>
+        <div class ="ui secondary menu">
+            <div class="left_menu_padding">
+                <p>Allie Chu</p>
+            </div>
 
-            <div class="right menu" id="right_menu_padding">
+            <div class="right menu right_menu_padding">
                 <a class="item" href="index.html">Home</a>
-                <a class="active item">About</a>
+                <a class="active item" href="about.html">About</a>
             </div>
 
             <!-- <a class="code popup icon item">
@@ -43,7 +46,7 @@
                 <i class="pen icon"></i>
             </a> -->
         </div>
-        <div class="ui container" id="about_header_space">
+        <div class="ui container about_header_space">
             <p>
                 <span class = "ui huge text"> Allie Chu</span> is currently a student living in Chicago attending college at the University of Chicago. 
                 Passionate about both design and computer science, she mixes these interests in pursuit of a double major 
@@ -73,10 +76,17 @@
                 </div>
             </div>
         </div>
+        <div class="spacer"></div>
     </body>
 
     <footer>
-        <!-- Load Javascript Scripts -->
-        <script src="javascript/webmain.js"></script>
+        <div class="footer">
+            <a href="https://www.linkedin.com/in/allie-chu-946999122/">
+                <img class="icon" src="assets/linkedin.png">
+            </a>
+            <a href="mailto: alliechu@gmail.com">
+                <img class="icon" style="max-height: 60px;" src="assets/email.png">
+            </a>
+        </div>
     </footer>
 </html>

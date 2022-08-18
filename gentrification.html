@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <title>About</title>
         <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 
         <!-- Custom Styling -->
         <link rel="stylesheet" type="text/css" href="main.css">
@@ -25,13 +26,15 @@
 
     <body>
         <!-- Banner -->
-        <img class="ui centered img" src="assets/webbanner.png">
+        <div class="banner"></div>
 
         <!-- Navigation Menu -->
-        <div class ="ui secondary menu" id="navmenu">
-            <a class="item" id="left_menu_padding" href="index.html">Allie Chu</a>
+        <div class ="ui secondary menu">
+            <div class="left_menu_padding">
+                <p>Allie Chu</p>
+            </div>
 
-            <div class="right menu" id="right_menu_padding">
+            <div class="right menu right_menu_padding">
                 <a class="active item" href="index.html">Home</a>
                 <a class="item" href="about.html">About</a>
             </div>
@@ -112,23 +115,31 @@
                         <img class="ui centered image large" src="assets/map.png">
                         <div class="image_divider"></div>
                         <img class="ui centered image large" src="assets/map2.png">
-                        <p id="caption">An early mockup of the map in the original color scheme.</p>
+                        <p class="caption">An early mockup of the map in the original color scheme.</p>
                         <div class="image_divider"></div>
                         <img class="ui centered image large" src="assets/map3.png">
-                        <p id="caption">Here on story pane #2, the map highlights Residential Exposure.</p>
+                        <p class="caption">Here on story pane #2, the map highlights Residential Exposure.</p>
                         <div class="image_divider"></div>
                         <img class="ui centered image large" src="assets/map4.png">
-                        <p id="caption">On the next pane, you now get the view of Experienced Exposure, which tells a different story.</p>
+                        <p class="caption">On the next pane, you now get the view of Experienced Exposure, which tells a different story.</p>
                         <div class="image_divider"></div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="spacer"></div>
+
     </body>
 
     <footer>
-        <!-- Load Javascript Scripts -->
-        <script src="javascript/webmain.js"></script>
+        <div class="footer">
+            <a href="https://www.linkedin.com/in/allie-chu-946999122/">
+                <img class="icon" src="assets/linkedin.png">
+            </a>
+            <a href="mailto: alliechu@gmail.com">
+                <img class="icon" style="max-height: 60px;" src="assets/email.png">
+            </a>
+        </div>
     </footer>
 </html>
