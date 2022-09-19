@@ -13,15 +13,6 @@
         <!-- Fomantic UI -->
         <link rel="stylesheet" type="text/css" href="website_fomantic/semantic/dist/semantic.min.css">
 
-        <!-- JQuery -->
-        <script src="javascript/jquery.js"></script>
-
-        <!-- Menu -->
-        <!-- <script> 
-            $(function(){
-              $("#header").load("header.html"); 
-            });
-        </script>  -->
     </head>
 
     <body>
@@ -38,92 +29,162 @@
                 <a class="active item" href="index.html">Home</a>
                 <a class="item" href="about.html">About</a>
             </div>
-
-            <!-- <a class="code popup icon item">
-                <i class="code icon"></i>
-            </a>
-            <a class="pen popup icon item">
-                <i class="pen icon"></i>
-            </a> -->
         </div>
 
         <!-- Content -->
-        <div class="ui grid container">
-            <div class="ui stackable two column grid">
-                <div class="row">
+        <div class="ui container">
+            <h1 class="ui header">Gentrification and Social Mixing</h1>
+
+            <div class="spacer" style="height: 20px;"></div>
+
+            <img class="ui centered fluid image" src="assets/mapwide.png">
+        </div>
+
+        <div class="spacer" style="height: 40px;"></div>
+
+        <div class="dark_grey_background">
+            <div class="ui container">
+                <div class="ui grid">
+                    <div class="case_study row">
+                        <p style="font-size: 20px; color: #FFFFFF">
+                            Build a website to visualize an emerging dataset about the 
+                            effects of gentrification on social mixing in Chicago.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="spacer" style="height: 40px;"></div>
+
+        <div class="ui container">
+            <div class="stackable ui grid">
+                <div class="case_study row padded">
+                    <h2 class="ui header">About the Project</h2>
+                    <p>
+                        This research project led by Wenfei Xu, a Postdoctoral Fellow at the University of Chicago,
+                        was titled “Gentrification and Social Mixing,” and looked at whether gentrification in 
+                        areas across Chicago was followed by increased racial mixing. From three datasets titled 
+                        Residential Exposure, Experienced Exposure, and Interaction Exposure, I worked with Wenfei
+                        over the course of two quarters to build a website which would show the story behind 
+                        these data sets.
+                    </p>
+                </div>
+
+                <div class="case_study row">
+                    <h2 class="ui header">Problem</h2>
+                    <p>
+                        With these data sets, the overarching goal was to breathe life into the data's story 
+                        through the construction of the website. Thus, in my design, I needed to not only display
+                        the layers of data, but also anything else pertinent to contextualizing the story behind
+                        the data.
+                    </p>
+                </div>
+
+                <div class="case_study row">
+                    <h2 class="ui header">Project Goals</h2>
+                </div>
+    
+                <div class="three column case_study row" style="background-color: #F5F5F5; padding: 10px !important; margin: 10px;">
                     <div class="column">
-                        <h1 class="ui header">Gentrification and Social Mixing</h1>
-                        <h2 class="ui header">About the Project</h2>
-                        <p>In the winter of 2022, I applied to a research opportunity at the University of Chicago looking 
-                            for a research assistant to help with a project titled “Gentrification and Social Mixing.” The 
-                            data leveraged cell phone usage patterns in Chicago to give a more granular look at the effects 
-                            of gentrification on the mixing of people of different races. In particular, the opportunity to 
-                            visualize this dataset was interesting to me, so I sent away my application.
-                        </p>
-                        <h2 class="ui header">UX and Web Development Goals</h2>
-                        <p>
-                            Come January, I began working with my mentor to lay out a timeline for completing a website, 
-                            as well as highlight the main goals of the project. From the initial ideation phase, we came 
-                            to a conclusion: The design should contextualize the data you're seeing on the map and situate
-                            it within a broader story of gentrification.
-    
-                        </p>
-                        <h2 class="ui header">UX Solutions</h2>
-                        <p>
-                            To highlight the map content, I opted for the map to fill the entire screen, while leaving two 
-                            panels which would contain the relevant information and controls to adjust the map view. This 
-                            created two distinct areas, one for the story and one for controls, while obstructing the least 
-                            amount of map view. 
-                            <br><br>
-                            To tackle our first goal, we created a storyline based way of moving through the map space. 
-                            Different cards take you to different parts of the map and activate different layers, while 
-                            providing context for the information you are seeing. In this way, the user can focus on analyzing 
-                            the data presented without having to manipulate the map space themselves. However, for users who 
-                            want more control over the view, the right side enables them to toggle all layers and borders, as 
-                            well as provides a collapsible legend to fit within a readable area. 
-                            <br><br>
-                            A final feature to help contextualize the data was the use of the hover feature. By putting the 
-                            data in a sentence, this enabled users to better understand what the data was showing them, and 
-                            understand the differences between layers.
-                            <br><br>
-                            In the original design of the layout, the panels were semi-opaque and the background map was 
-                            shades of grey, making contrast difficult and the text less readable. Later changes involved 
-                            adjusting the base map to have higher contrast and increasing the opacity of the panels to 
-                            create sufficient contrast to improve readability.  
-    
-                        </p>
-                        <h2 class="ui header">Web Development</h2>
-                        <p>
-                            This project was built on Mapbox GL JS and Fomantic UI. At this point I was new to web design, 
-                            having just taken broader computer science classes, and thus had a lot of learning to do to build 
-                            anything at all. However, with some help from past professors and Wenfei, I was able to turn my 
-                            wireframes into the website itself. 
-                            <br><br>
-                            Learnings from this website to take to the next project would be usability on mobile, currently 
-                            the website is only usable on desktop, and adding a buffering page to create a better user experience 
-                            when the website is first loading rather than waiting for all the layers to populate.  
-                        </p>
-                        <h2 class="ui header">Team</h2>
-                        <p>Allie Chu: UI/UX Designer and Web Developer</p>
-                        <p>Wenfei Xu: Research Coordinator</p>
-                        <!-- <a href="https://ajchu28.github.io/mapwebsite/index.html">
-                            <h2 class="ui header" id="website_link">Website</h2>
-                        </a> -->
-                        <h3 class="ui header">Presented at the Spring Undergraduate Research Symposium at the University of Chicago</h2>
+                        <h2>1.</h2>
+                        <p>Create an intuitive control panel from which the user can select data sets and accompanying layers to view.</p>
                     </div>
                     <div class="column">
-                        <img class="ui centered image large" src="assets/map.png">
-                        <div class="image_divider"></div>
-                        <img class="ui centered image large" src="assets/map2.png">
-                        <p class="caption">An early mockup of the map in the original color scheme.</p>
-                        <div class="image_divider"></div>
-                        <img class="ui centered image large" src="assets/map3.png">
-                        <p class="caption">Here on story pane #2, the map highlights Residential Exposure.</p>
-                        <div class="image_divider"></div>
-                        <img class="ui centered image large" src="assets/map4.png">
-                        <p class="caption">On the next pane, you now get the view of Experienced Exposure, which tells a different story.</p>
-                        <div class="image_divider"></div>
+                        <h2>2.</h2>
+                        <p>Include a feature to provide a guided walk through of the data sets to tell the story behind highlighted areas on the map.</p>
                     </div>
+                    <div class="column">
+                        <h2>3.</h2>
+                        <p>Assist users in understanding what each data set represents, as the metrics are not straightforward to understand.</p>
+                    </div>
+                </div>
+
+                <div class="spacer" style="height: 15px;"></div>
+
+                <div class="case_study row">
+                    <h2 class="ui header">UX Solutions</h2>
+                </div>
+
+                <div class="two column case_study row" style="background-color: #F5F5F5; margin: 10px; padding: 10px !important;">
+                    <div class="column">
+                        <h2>1.</h2>
+                        <p>
+                            Using Figma, Wenfei and I went through several iterations of what the side control panels would look like.
+                            We opted for the map to fill the entire screen, and decided to add two panels to each side third to help
+                            focus the user's eye on the center of the map. <br> <br>
+                            Early iterations had panels of various sizing and opacity, however in this process we determined that 
+                            fully opaque panels helped the user read the small content better, and that panels which were too large 
+                            detracted from the focal point, the map. <br> <br>
+                            Additionally, we had several iterations of the way users would be able to toggle information, 
+                            such as a drop down menu or various buttons. We settled on a combination of radio buttons and 
+                            checkboxes because it suggests to the user which layers can have multiple selected concurrently, 
+                            compared to which may only have one selected. Furthermore, collapsing the legends helped save space 
+                            while still giving the user full control over which legends to have viewable. 
+                        </p>
+                    </div>
+
+                    <div class="column"  style="margin: auto; display: block;">
+                        <img class="ui image" src="assets/map2.png">
+                    </div>
+                </div>
+
+                <div class="two column case_study row" style="background-color: #F5F5F5; padding: 10px !important; margin: 10px;">
+                    <div class="column">
+                        <h2>2.</h2>
+                        <p>
+                            The left portion of the webpage is composed of a guided walk through of the map space.
+                            Although there is only one story at the moment, the component enables users to 
+                            connect stories to places. It serves as an easy introduction to the data of the map, 
+                            as it teaches users on how to navigate and read the map. 
+                        </p>
+                    </div>
+
+                    <div class="column"  style="margin: auto; display: block;">
+                        <img class="ui image" src="assets/map3.png">
+                    </div>
+                </div>
+
+                <div class="two column case_study row" style="background-color: #F5F5F5; padding: 10px !important; margin: 10px;">
+                    <div class="column">
+                        <h2>3.</h2>
+                        <p>
+                            Finally, describing what the data sets represent was the last challenge we faced. 
+                            To solve this, we added a hover component which would put the information for that
+                            specific tract in a sentence about what the number means. For example, hovering over 
+                            an area when the Experienced Exposure layer is on tells you that “there's a xx% chance
+                            that two people who have visited this tract are different races.”  
+                        </p>
+                    </div>
+
+                    <div class="column"  style="margin: auto; display: block;">
+                        <img class="ui image" src="assets/map3.png">
+                    </div>
+                </div>
+
+                <div class="spacer" style="height: 15px;"></div>
+
+                <div class="case_study row">
+                    <h2 class="ui header">Tech Stack</h2>
+                    <p>
+                        Over four months I built the website, which can be found 
+                        <a href="https://ajchu28.github.io/mapwebsite/index.html">here</a>, with Mapbox GL JS and Fomantic UI. The site is currently
+                        hosted on Github Pages. I had some basic HTML and CSS experience preceding this project, but hadn't worked extensively with Javascript, 
+                        nor had I built a website from start to finish. Working on this project not only enabled me to refine my 
+                        UX skills, but I also had the opportunity to implement the designs myself.  
+                    </p>
+                </div>
+
+                <div class="spacer" style="height: 15px;"></div>
+
+                <div class="case_study row">
+                    <h2 class="ui header">Team</h2>
+                </div>
+
+                <div class="case_study row" style="margin-top: -5px;">
+                    <p>Allie Chu: UI/UX Designer and Web Developer <br> Wenfei Xu: Research Coordinator <br> 
+                        Presented at the Spring Undergraduate Research Symposium at the University of Chicago
+                    </p>
                 </div>
             </div>
         </div>
