@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fidget Cube</title>
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+        <!-- Custom Styling -->
+        <link rel="stylesheet" type="text/css" href="main.css">
+    
+        <!-- Fomantic UI -->
+        <link rel="stylesheet" type="text/css" href="website_fomantic/semantic/dist/semantic.min.css">
+
+        <!-- JQuery -->
+        <script src="javascript/jquery.js"></script>
+
+    </head>
+
+    <body>
+        <!-- Banner -->
+        <div class="banner"></div>
+
+        <!-- Navigation Menu -->
+        <div class ="ui secondary menu">
+            <div class="left_menu_padding">
+                <p>Allie Chu</p>
+            </div>
+
+            <div class="right menu right_menu_padding">
+                <a class="active item" href="index.html">Home</a>
+                <a class="item" href="about.html">About</a>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="ui container">
+            <h1 class="ui header">Fidget Cube</h1>
+
+            <div class="spacer" style="height: 20px;"></div>
+
+            <img class="ui centered fluid image" src="assets/fidgetcubehand.png" alt="Fidget cube in hand">
+        </div>
+
+        <div class="spacer" style="height: 40px;"></div>
+
+        <div class="ui container">
+            <div class="stackable ui grid">
+                <div class="case_study row padded">
+                    <h2 class="ui header">About the Project</h2>
+                    <p>
+                        For Inventing, Engineering, and Understanding Interactive Devices, we were tasked with building
+                        an interactive device for our final project. The requirements for this device were that it be
+                        self contained, make use of several sensors, and be both elegant and neat in execution. My groupmate
+                        and I settled on the idea of building an interactive fidget cube, which would have various functionality
+                        depending on which side was active. 
+                    </p>
+                </div>
+
+                <div class="two column case_study row" style="background-color: #F5F5F5; margin: 10px; padding: 10px !important;">
+                    <div class="column">
+                        <h2>Designing</h2>
+                        <p>
+                            To make the fidget cube interactive, we used a variety of sensors which took different inputs and in turn 
+                            triggered varying responses from the cube. For example, one side had a joystick controller which when moved, 
+                            caused a piezo motor to vibrate. On another, we had an accelerometer that made LED lights flash when the cube 
+                            was spun. However, with this multitude of sensors that we were trying to fit into a hand held cube came a 
+                            huge design challenge of making everything fit. We iterated through several designs of the internal housing
+                            mechanisms for the sensors, including 3D printing an internal casing or laser cutting acrylic to make the 
+                            sensors fit snugly and thus support their weight. From this stage, we moved into prototyping our ideas. 
+                        </p>
+                    </div>
+
+                    <div class="column"  style="margin: auto; display: block;">
+                        <div class="ui two column grid">
+                            <div class="column">
+                                <img class="ui image" src="assets/fidgetdraft.jpg" alt="Drafted drawing of fidget cube functionality">
+                            </div>
+                            <div class="column">
+                                <img class="ui image" src="assets/fidgetdraft2.jpg" alt="Drafted drawing of fidget cube housing">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="two column case_study row" style="background-color: #F5F5F5; padding: 10px !important; margin: 10px;">
+                    <div class="column">
+                        <h2>Prototyping</h2>
+                        <p>
+                            Our fidget cube had several aspects that needed prototyping, from the circuitry to external casing to 
+                            testing the functionality of our code. By testing the functionality of everything on the breadboard, 
+                            we ensured that our Fritzing diagram was complete, that all of our hardware worked, and that our given 
+                            battery was sufficient to power the fidget cube. Having everything mapped out on the breadboard also 
+                            enabled us to test all our code beforehand while it was easy to make changes to the layout. Finally, 
+                            it took several attempts to get the sizing right on our laser cut acrylic to fit the components which 
+                            would stick out from the cube. 
+                        </p>
+                    </div>
+
+                    <div class="column"  style="margin: auto; display: block;">
+                        <img class="ui image" src="assets/fidgetprototype.png" alt="Breadboard of fidget cube components">
+                    </div>
+                </div>
+
+                <div class="two column case_study row" style="background-color: #F5F5F5; padding: 10px !important; margin: 10px;">
+                    <div class="column">
+                        <h2>Engineering</h2>
+                        <p>
+                            What would engineering be without setbacks? We ended up creating two cubes, because the first Arduino 
+                            we had controlling the fidget cube broke after most components had been soldered to the protoboard. 
+                            This ended up causing trickle down impact because there was not another Arduino of the same size, 
+                            requiring us to size up and change our Fritzing diagram on the fly, as well as reprint the acrylic 
+                            casing. However, eventually we were able to get everything on pins and soldered to the board. Because 
+                            we had been testing connections as we went to make sure each additional sensor was functional, by the 
+                            time we finished everything, the fidget cube worked!  
+                        </p>
+                    </div>
+
+                    <div class="column"  style="margin: auto; display: block;">
+                        <div class="ui two column grid">
+                            <div class="column">
+                                <img class="ui image" src="assets/fidgetprotoboard.png" alt="Drafted drawing of fidget cube functionality">
+                            </div>
+                            <div class="column">
+                                <img class="ui image" src="assets/fidgetclamp.png" alt="Drafted drawing of fidget cube housing">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="two column case_study row" style="background-color: #F5F5F5; padding: 10px !important; margin: 10px;">
+                    <div class="column">
+                        <h2>Demo</h2>
+                        <p>
+                            Watch my groupmate, Tyler, demo our finished fidget cube! 
+                        </p>
+                    </div>
+
+                    <div class="column" style="display: flex; justify-content: center;">
+                        <video height="400" controls>
+                            <source src="assets/fidgetdemo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <div class="spacer" style="height: 15px;"></div>
+
+                <div class="case_study row">
+                    <h2 class="ui header">Team</h2>
+                </div>
+
+                <div class="case_study row" style="margin-top: -5px;">
+                    <p>
+                        Project Group: Allie Chu, Tyler Gao
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="spacer"></div>
+
+    </body>
+
+    <footer>
+        <div class="footer">
+            <a href="https://www.linkedin.com/in/allie-chu-946999122/">
+                <img class="icon" src="assets/linkedin.png">
+            </a>
+            <a href="mailto: alliechu@gmail.com">
+                <img class="icon" style="max-height: 60px;" src="assets/email.png">
+            </a>
+            <a href="assets/resume.pdf">
+                <img class="icon" style="max-height: 40px;" src="assets/resume.png">
+            </a>
+        </div>
+        <div class="website_attribution">
+            <p>Website <a href="https://github.com/ajchu28/portfolio" style="color: #BBACBA"> designed and built </a> by Allie Chu</p>
+        </div>
+    </footer>
+</html>

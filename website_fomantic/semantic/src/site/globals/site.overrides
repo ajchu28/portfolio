@@ -20,9 +20,9 @@
 
 /****** Text ******/
 a {
-  color: @link-color;
+  color: #6D6B8E;
 }
 
 a:hover {
-  color: @link-hover-color;
+  color: #BBBACA;
 }
