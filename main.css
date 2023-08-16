@@ -1,6 +1,9 @@
 /************************** Website Styling *************************/
 
 /************************** General *************************/
+.custom-cursor {
+  cursor: url('assets/Chopstick_Cursor.cur'), auto;
+}
 
 /************************** Menu *************************/
 .right_menu_padding {
@@ -14,8 +17,13 @@
 }
 
 .banner {
-    background-image: linear-gradient(to right, #353A70, #EDDADA);
+    background-color: #A52E2A;
     height: 15px;
+}
+
+.banner-small {
+  background-color: #C97439;
+  height: 8px;
 }
 
 /************************** Home Allie Blurb *************************/
@@ -83,12 +91,26 @@
 }
 
 .casestudy_link {
-    color: #1F2769 !important;
+    color: #A52E2A !important;
     font-size: 12pt;
 }
 
 .spacer {
     height: 60px;
+}
+
+.link {
+  color: #A52E2A !important;
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: underline;
+}
+
+.homebackground {
+  background-image: url(assets/smallBowls.png); 
+  /* background-position: center bottom; */
+  /* background-repeat:repeat-x;  */
+  object-fit: fill;
 }
 
 /* Mobile */
@@ -133,7 +155,8 @@
     justify-content: center;
     align-items: center;
     height: 200px;
-    background-image: linear-gradient(to right, #353A70, #EDDADA)
+    background-image: url(assets/smallBowls.png);
+    background-color: #fff;
 }
 
 .footer .icon {

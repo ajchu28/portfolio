@@ -36,33 +36,20 @@
             </div>
 
             <div class="right menu right_menu_padding">
-                <a class="active item" href="index.html">Home</a>
-                <a class="item" href="about.html">About</a>
-            </div>
+              <a class="active item" href="index.html">Home</a>
+              <a class="item" href="bites.html">Bites</a>
+              <!-- <a class="item" href="sides.html">Sides</a> -->
+              <a class="item" href="about.html">About</a>
+          </div>
         </div>
 
         <!-- Content -->
         <div class="ui container">
-            <h1 class="ui header">Gentrification and Social Mixing</h1>
+            <h1 class="ui header">Gentrification and Social Mixing: Uncovering Patterns of Social Mixing</h1>
 
             <div class="spacer" style="height: 20px;"></div>
 
             <img class="ui centered fluid image" src="assets/mapwide.png" alt="Map website home screen">
-        </div>
-
-        <div class="spacer" style="height: 40px;"></div>
-
-        <div class="dark_grey_background">
-            <div class="ui container">
-                <div class="ui grid">
-                    <div class="case_study row">
-                        <p style="font-size: 20px; color: #FFFFFF">
-                            Build a website to visualize an emerging dataset about the 
-                            effects of gentrification on social mixing in Chicago.
-                        </p>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <div class="spacer" style="height: 40px;"></div>
@@ -72,65 +59,65 @@
                 <div class="case_study row padded">
                     <h2 class="ui header">About the Project</h2>
                     <p>
-                        This research project led by Wenfei Xu, a Postdoctoral Fellow at the University of Chicago,
-                        was titled “Gentrification and Social Mixing,” and looked at whether gentrification in 
-                        areas across Chicago was followed by increased racial mixing. From three datasets titled 
-                        Residential Exposure, Experienced Exposure, and Interaction Exposure, I worked with Wenfei
-                        over the course of two quarters to build a website which would show the story behind 
-                        these data sets.
+                      Anyone living in Hyde Park, the neighborhood surrounding University of Chicago’s campus, has a front 
+                      row seat in witnessing gentrification in Chicago. However, gentrification is not just a phenomenon 
+                      tied to UChicago’s seat in the South Side, and is experienced across large swathes of the city, 
+                      according to the Urban Displacement Project. Historically, the story of gentrification is patched 
+                      together using census data, giving a low granularity view on the impacts of individuals’ lives who 
+                      are affected by gentrification. However, through the use of anonymized cell phone data, we were able 
+                      to piece together a better understanding of the social dynamics influenced by gentrification in Chicago. 
+                      <br><br>
+                      The novelty of this data necessitated a novel way of viewing it. I was brought onto this project as 
+                      the web designer and developer, tasked with creating a website which would help paint the story of 
+                      gentrification through another lens. 
+                      
                     </p>
                 </div>
 
                 <div class="case_study row">
-                    <h2 class="ui header">Problem</h2>
+                    <h2 class="ui header">Learning about the Problem</h2>
                     <p>
-                        With these data sets, the overarching goal was to breathe life into the data's story 
-                        through the construction of the website. Thus, in my design, I needed to not only display
-                        the layers of data, but also anything else pertinent to contextualizing the story behind
-                        the data.
+                      What does experienced exposure mean? How is that different from residential exposure? What do these 
+                      mean in the context of gentrification? 
+                      <br><br>
+                      To gain a better understanding of gentrification and its impact, I conducted research by drawing 
+                      upon my knowledge from various courses at the University of Chicago and immersing myself in relevant 
+                      literature and geography-based readings. Although I was not directly involved in data collection or 
+                      cleaning, this research served as a foundation for grasping the complexities of the issue and designing 
+                      a better website.
+                      <br><br>
+                      Additionally, I looked through existing visualizations to gain inspiration and see what else is out there. 
+                      When conducting this exploration, I imagined myself to be our target user: someone in academia, perhaps 
+                      at a school like UChicago. They could be a student or professor looking to learn more about the impact of 
+                      gentrification in Chicago and have seen this website presented at a symposium, since that’s what the 
+                      postdoc I was working with had envisioned as the purpose of the website. However, we didn’t want to 
+                      limit the audience just to people in the field of academia. With gentrification being a hot-button issue, 
+                      we wanted to build a site that was approachable to the general public—a tool that they could use to explore 
+                      the impacts of gentrification in their own city. Through these two lenses, I evaluated numerous other 
+                      websites to gain a better understanding of how they conveyed their data set in a legible, engaging, and 
+                      accessible way.
                     </p>
                 </div>
 
                 <div class="case_study row">
-                    <h2 class="ui header">Project Goals</h2>
-                </div>
-    
-                <div class="three column case_study row" style="background-color: #F5F5F5; padding: 10px !important; margin: 10px;">
-                    <div class="column">
-                        <h2>1.</h2>
-                        <p>Create an intuitive control panel from which the user can select data sets and accompanying layers to view.</p>
-                    </div>
-                    <div class="column">
-                        <h2>2.</h2>
-                        <p>Include a feature to provide a guided walk through of the data sets to tell the story behind highlighted areas on the map.</p>
-                    </div>
-                    <div class="column">
-                        <h2>3.</h2>
-                        <p>Assist users in understanding what each data set represents, as the metrics are not straightforward to understand.</p>
-                    </div>
-                </div>
-
-                <div class="spacer" style="height: 15px;"></div>
-
-                <div class="case_study row">
-                    <h2 class="ui header">UX Solutions</h2>
+                    <h2 class="ui header">Design Process</h2>
                 </div>
 
                 <div class="two column case_study row" style="background-color: #F5F5F5; margin: 10px; padding: 10px !important;">
                     <div class="column">
-                        <h2>1.</h2>
+                        <h2>Ideation</h2>
                         <p>
-                            Using Figma, Wenfei and I went through several iterations of what the side control panels would look like.
-                            We opted for the map to fill the entire screen, and decided to add two panels to each side third to help
-                            focus the user's eye on the center of the map. <br> <br>
-                            Early iterations had panels of various sizing and opacity, however in this process we determined that 
-                            fully opaque panels helped the user read the small content better, and that panels which were too large 
-                            detracted from the focal point, the map. <br> <br>
-                            Additionally, we had several iterations of the way users would be able to toggle information, 
-                            such as a drop down menu or various buttons. We settled on a combination of radio buttons and 
-                            checkboxes because it suggests to the user which layers can have multiple selected concurrently, 
-                            compared to which may only have one selected. Furthermore, collapsing the legends helped save space 
-                            while still giving the user full control over which legends to have viewable. 
+                          Wenfei, the primary researcher, and I sat down and brainstormed a myriad of possible features from interactive 
+                          graph components to text based stories. Based on my technical knowledge and experience, I was able to do some 
+                          research into each of these features and estimate a time cost—given our five month timeframe, we sought to 
+                          design a site that satisfied our main problem while remaining possible to complete. 
+                          <br><br>
+                          Concurrently with the ideation process, each of us asked people in our circles to describe how they would 
+                          want to interact with a data set such as the one we had. Both Wenfei and I had access to different audiences—
+                          Wenfei worked with many other researchers at the Mansueto Institute for Urban Innovation, while I talked to 
+                          several students who had never thought critically about a map before. After modifying our ideas with some 
+                          preliminary feedback from our target audience, I began the next phase of the design process.
+                          
                         </p>
                     </div>
 
@@ -141,12 +128,19 @@
 
                 <div class="two column case_study row" style="background-color: #F5F5F5; padding: 10px !important; margin: 10px;">
                     <div class="column">
-                        <h2>2.</h2>
+                        <h2>Sketching and Wireframing</h2>
                         <p>
-                            The left portion of the webpage is composed of a guided walk through of the map space.
-                            Although there is only one story at the moment, the component enables users to 
-                            connect stories to places. It serves as an easy introduction to the data of the map, 
-                            as it teaches users on how to navigate and read the map. 
+                          Based on the initial exploration, we opted for a simple sitemap—just the map page and an about page. 
+                          From a style standpoint, we knew we were going to use the Fomantic UI development framework to style the 
+                          website, so we decided to keep the presets. Most styling which would shape a user’s interaction happened 
+                          in the map layer; keeping a simple, clean UI for the rest of the site would place emphasis on the visualization 
+                          itself.
+                          <br><br>
+                          The majority of the wireframing centered around the way the map would display on a page and where the user’s 
+                          controls would be. With this, we played with a few layouts but ultimately opted for a full-width, full-height 
+                          map with semi-opaque control panels over-laying the top. Based on my research, this seems like a common layout 
+                          to maximize the size of the map. It’s worth noting here that we designed the website exclusively for desktop use.
+                          
                         </p>
                     </div>
 
@@ -157,13 +151,18 @@
 
                 <div class="two column case_study row" style="background-color: #F5F5F5; padding: 10px !important; margin: 10px;">
                     <div class="column">
-                        <h2>3.</h2>
+                        <h2>Prototyping</h2>
                         <p>
-                            Finally, describing what the data sets represent was the last challenge we faced. 
-                            To solve this, we added a hover component which would put the information for that
-                            specific tract in a sentence about what the number means. For example, hovering over 
-                            an area when the Experienced Exposure layer is on tells you that “there's a xx% chance
-                            that two people who have visited this tract are different races.”  
+                          With our wireframe designed, I proceeded to prototyping the final layout. Because of the simplicity of the layout, 
+                          the prototyping mostly served as a way to think through layer hierarchy (what layers appear first? How do you toggle 
+                          through other layers?). We used these prototypes to collect another round of informal feedback from peers and friends, 
+                          leading to a few conclusions moving forward: <br><br>
+                          <b>1.</b> The response to our storytelling feature was very positive. People liked the guided interaction through the website 
+                          because it made the data less daunting to digest. <br><br>
+                          <b>2.</b> It’s not enough just to have the three types of exposures being toggled. How can we better contextualize this within
+                          other data from the city?<br><br>
+                          <b>3.</b> The initial base map color scheme (light grey and dark grey) is confusing because the water is darker than the land. 
+                          People did like the simplicity because it wouldn’t detract from the information.
                         </p>
                     </div>
 
@@ -175,13 +174,23 @@
                 <div class="spacer" style="height: 15px;"></div>
 
                 <div class="case_study row">
-                    <h2 class="ui header">Tech Stack</h2>
+                  <h2 class="ui header">Implementation</h2>
+                  <p>As the designer and developer, I had the opportunity to execute our vision and bring the design to life. 
+                    Over four months I built the website, which can be found <a style="text-decoration: underline; font-weight: bold; color: #A52E2A !important" href="https://ajchu28.github.io/mapwebsite/index.html">here</a>, 
+                    with Mapbox GL JS and Fomantic UI. The site 
+                    is currently hosted on Github Pages. I had some basic HTML and CSS experience preceding this project, but 
+                    hadn't worked extensively with Javascript, nor had I built a website from start to finish. Working on this 
+                    project not only enabled me to refine my UX skills, but also further solidified my understanding of the interplay 
+                    between design and implementation.</p>
+              </div>
+
+                <div class="case_study row">
+                    <h2 class="ui header">Impact</h2>
                     <p>
-                        Over four months I built the website, which can be found 
-                        <a href="https://ajchu28.github.io/mapwebsite/index.html">here</a>, with Mapbox GL JS and Fomantic UI. The site is currently
-                        hosted on Github Pages. I had some basic HTML and CSS experience preceding this project, but hadn't worked extensively with Javascript, 
-                        nor had I built a website from start to finish. Working on this project not only enabled me to refine my 
-                        UX skills, but I also had the opportunity to implement the designs myself.  
+                      I presented Visualizing Gentrification in Chicago: Uncovering Patterns of Social Mixing at the Spring 
+                      Undergraduate Research Symposium at the University of Chicago. This event provided valuable opportunities 
+                      to showcase the visualization, engage with the audience, and gather feedback. The insights gathered from 
+                      these interactions were incorporated into my subsequent thesis project, <a style="text-decoration: underline; font-weight: bold; color: #A52E2A !important" href="rideshare.html">Visualizing Chicago Rideshare Costs</a>.  
                     </p>
                 </div>
 
