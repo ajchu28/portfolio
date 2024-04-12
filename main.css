@@ -28,8 +28,17 @@
 
 /************************** Home Allie Blurb *************************/
 .allie_blurb.content {
-    font-size: 20px;
+    font-size: 25px;
     line-height: 30px;
+    font-weight: 500;
+    padding: 30px;
+}
+
+.allie_blurb.header {
+    font-size: 30px;
+    font-weight: 800;
+    /* color:#A52E2A; */
+    /* padding-top: 40px; */
 }
 
 /************************** Home Page Content *************************/
