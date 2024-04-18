@@ -49,152 +49,192 @@
 
             <div class="spacer" style="height: 20px;"></div>
 
-            <img class="ui centered fluid image" src="assets/mapwide.png" alt="Map website home screen">
+            <!-- <img class="ui centered fluid image" src="assets/mapwide.png" alt="Map website home screen"> -->
         </div>
 
-        <div class="spacer" style="height: 40px;"></div>
+        <div class="spacer" style="height: 30px;"></div>
 
-        <div class="ui container">
+        <div class="ui container" style="max-width: 800px;">
             <div class="stackable ui grid">
                 <div class="case_study row padded">
                     <h2 class="ui header">About the Project</h2>
                     <p>
-                      Anyone living in Hyde Park, the neighborhood surrounding University of Chicago’s campus, has a front 
-                      row seat in witnessing gentrification in Chicago. However, gentrification is not just a phenomenon 
-                      tied to UChicago’s seat in the South Side, and is experienced across large swathes of the city, 
-                      according to the Urban Displacement Project. Historically, the story of gentrification is patched 
-                      together using census data, giving a low granularity view on the impacts of individuals’ lives who 
-                      are affected by gentrification. However, through the use of anonymized cell phone data, we were able 
-                      to piece together a better understanding of the social dynamics influenced by gentrification in Chicago. 
-                      <br><br>
-                      The novelty of this data necessitated a novel way of viewing it. I was brought onto this project as 
-                      the web designer and developer, tasked with creating a website which would help paint the story of 
-                      gentrification through another lens. 
+                        While I was in college, the cost of lattes in Hyde Park doubled. The neighborhood UChicago calls 
+                        home on the south side of Chicago went from having mom and pop sandwich shops selling $4 lattes 
+                        to being replaced by Mint Mojitos from Philz, where a pretty penny lets you pick everything from 
+                        the type of milk to type of sweetener.
                       
                     </p>
+                    <img class="ui centered image" src="assets/philz.jpeg" style="padding-bottom: 20px;" alt="Philz Picture">
+                    <p>
+                        UChicago has a history of pushing for self-interested development goals in Hyde Park 
+                        as it strives to create a college town to rival the Ivies in the East. The $8 lattes we sipped served 
+                        as the inspiration for this research and design project. Wenfei Xu, a postdoctoral student at the 
+                        Mansueto Institute for Urban Innovation, and I embarked on a six month project to visualize spatial 
+                        data on gentrification in Chicago. 
+                        <br><br>
+                        Historically, the story of gentrification is patched together using census data, telling a static 
+                        story about the way it impacts the lives of people in gentrifying communities. Previous mapping 
+                        projects showing gentrification in Chicago have looked at measures such as changing housing costs 
+                        or changes in income at a tract level. However, in a city where gentrification and segregation go 
+                        hand in hand, how might another view of the way people interact and live reveal more about 
+                        segregation in gentrifying neighborhoods? How might that support or refute the claim that exposure 
+                        to neighborhood diversity increases socioeconomic outcomes?
+                    </p>
+                    
                 </div>
 
-                <div class="case_study row">
-                    <h2 class="ui header">Learning about the Problem</h2>
+                <div class="spacer" style="height: 25px;"></div>
+
+                <div class="case_study row padded">
+                    <h2 class="ui header">Breaking Down the Research Hypothesis</h2>
                     <p>
-                      What does experienced exposure mean? How is that different from residential exposure? What do these 
-                      mean in the context of gentrification? 
-                      <br><br>
-                      To gain a better understanding of gentrification and its impact, I conducted research by drawing 
-                      upon my knowledge from various courses at the University of Chicago and immersing myself in relevant 
-                      literature and geography-based readings. Although I was not directly involved in data collection or 
-                      cleaning, this research served as a foundation for grasping the complexities of the issue and designing 
-                      a better website.
-                      <br><br>
-                      Additionally, I looked through existing visualizations to gain inspiration and see what else is out there. 
-                      When conducting this exploration, I imagined myself to be our target user: someone in academia, perhaps 
-                      at a school like UChicago. They could be a student or professor looking to learn more about the impact of 
-                      gentrification in Chicago and have seen this website presented at a symposium, since that’s what the 
-                      postdoc I was working with had envisioned as the purpose of the website. However, we didn’t want to 
-                      limit the audience just to people in the field of academia. With gentrification being a hot-button issue, 
-                      we wanted to build a site that was approachable to the general public—a tool that they could use to explore 
-                      the impacts of gentrification in their own city. Through these two lenses, I evaluated numerous other 
-                      websites to gain a better understanding of how they conveyed their data set in a legible, engaging, and 
-                      accessible way.
+                        To really flex the skills higher academia taught us, Wenfei and I produced a 93 word, 
+                        run-on sentence explaining the metrics we would be examining, weaving in big words like 
+                        “spatiotemporal” and “epistemological.” This sentence revealed a key gap with the study, 
+                        one that my work on this project would seek to bridge. How could an issue that is so 
+                        fundamentally human, pervasive, and observable in our community become so inaccessible 
+                        due to the language and culture of higher education? Thus, my primary role in this project 
+                        became to make the findings of this study more widely accessible and engaging through building 
+                        an interactive visualization. 
+                      
+                    </p>
+                    <p>
+                        While school taught me to pinpoint meaning with precise word choice and complex sentences, I 
+                        found myself drawn to the language of design as a universal language which fundamentally seeks 
+                        to bring knowledge within reach. This served as the jumping off point for my background research 
+                        for this project, where I looked for examples of great visual design breaking down a problem into 
+                        something easier to digest. I found inspiration in the book Food and Drink Infographics: A Visual 
+                        Guide to Culinary Pleasures and the map created to visualize Manhattan population density. 
+                    </p>
+                    <p>
+                        Food and Drink Infographics brings accessibility to the science, history, presentation, and creation 
+                        of food by showcasing a multitude of ways in which complex terms can be broken down into simple 
+                        visualizations (by julienne you mean cut into small sticks). On the other hand, Justin Fung made 
+                        census data fun and showcased another way of looking at an experience we can all relate to. 
+                    </p>
+                    <p>
+                        From this inspiration, I started by sketching and then mocking up what I envisioned the website 
+                        looking like. We would have a way for someone to click through and see a story of a neighborhood, 
+                        a nice choropleth map, and maybe a way to select different cities once we had prepared the datasets 
+                        for other places. 
+                    </p>
+                    <img class="ui centered image" src="assets/map2.png" style="padding-bottom: 20px;" alt="Map website original mockup">
+                    <p>
+                        Armed with a vision and a dream, I faced just one small hurdle, I had never made a map before. 
                     </p>
                 </div>
 
+                <div class="spacer" style="height: 25px;"></div>
+
                 <div class="case_study row">
-                    <h2 class="ui header">Design Process</h2>
+                    <h2 class="ui header">What the Industry Calls "Technical Constraints"</h2>
+                    <p>
+                       Now if I was at a company working on a team, I would probably hand off the beautiful mockups I 
+                       made inspired by all the awesome designs I had seen to an engineer. They would tell me something like the great
+                       example ChatGPT provided: 
+                    </p>
+                    <img class="ui big centered image" src="assets/chatGPT.png" style="padding-bottom: 20px;" alt="Philz Picture">
+                    <p>
+                        However, being the engineer on this project, that meant it was time for me to understand what was actually a 
+                        technical constraint and what was something I could teach myself to do. In this process, I uncovered a few 
+                        flaws in my design.
+                    </p>
                 </div>
 
                 <div class="two column case_study row" style="background-color: #F5F5F5; margin: 10px; padding: 10px !important;">
                     <div class="column">
-                        <h2>Ideation</h2>
+                        <h3>The Graph Problem</h3>
                         <p>
-                          Wenfei, the primary researcher, and I sat down and brainstormed a myriad of possible features from interactive 
-                          graph components to text based stories. Based on my technical knowledge and experience, I was able to do some 
-                          research into each of these features and estimate a time cost—given our five month timeframe, we sought to 
-                          design a site that satisfied our main problem while remaining possible to complete. 
-                          <br><br>
-                          Concurrently with the ideation process, each of us asked people in our circles to describe how they would 
-                          want to interact with a data set such as the one we had. Both Wenfei and I had access to different audiences—
-                          Wenfei worked with many other researchers at the Mansueto Institute for Urban Innovation, while I talked to 
-                          several students who had never thought critically about a map before. After modifying our ideas with some 
-                          preliminary feedback from our target audience, I began the next phase of the design process.
-                          
+                            The Graph Problem What was originally a “nice to have” feature in my first mockup turned into a 
+                            nightmare the more I looked into its implementation. To construct the histogram displaying the 
+                            selected neighborhood’s exposure measure compared to the rest of the graph, I would need to add 
+                            an entire engine (I was considering D3.js) to compute the statistics and construct the graph, 
+                            just to show users how that neighborhood stacked up. Given the time constraints on this project 
+                            and my coding ability at the time, I opted for a static key for showing ranges on the choropleth 
+                            map. While I could’ve done a static histogram and mapped the interactivity over the image, the 
+                            original intention was for this project to scale to multiple cities, so having a computed 
+                            histogram for each city was a cleaner solution and opened the door to a potential future 
+                            webpage on statistics for the cities.
                         </p>
                     </div>
 
                     <div class="column"  style="margin: auto; display: block;">
-                        <img class="ui image" src="assets/map2.png" alt="Map website original mockup">
+                        <img class="ui centered image" src="assets/graphproblem.png" alt="Graph issues">
                     </div>
                 </div>
 
-                <div class="two column case_study row" style="background-color: #F5F5F5; padding: 10px !important; margin: 10px;">
+                <div class="one column case_study row" style="background-color: #F5F5F5; padding: 10px !important; margin: 10px;">
                     <div class="column">
-                        <h2>Sketching and Wireframing</h2>
+                        <h3>The Layer Problem</h3>
                         <p>
-                          Based on the initial exploration, we opted for a simple sitemap—just the map page and an about page. 
-                          From a style standpoint, we knew we were going to use the Fomantic UI development framework to style the 
-                          website, so we decided to keep the presets. Most styling which would shape a user’s interaction happened 
-                          in the map layer; keeping a simple, clean UI for the rest of the site would place emphasis on the visualization 
-                          itself.
-                          <br><br>
-                          The majority of the wireframing centered around the way the map would display on a page and where the user’s 
-                          controls would be. With this, we played with a few layouts but ultimately opted for a full-width, full-height 
-                          map with semi-opaque control panels over-laying the top. Based on my research, this seems like a common layout 
-                          to maximize the size of the map. It’s worth noting here that we designed the website exclusively for desktop use.
-                          
+                            Originally I served the exposure layers on a single tileset from Mapbox and loaded that layer every 
+                            time the toggle changed. This led to immense lag in the first version of the map experience. To get 
+                            around this, I changed the exposure layers to populate from multiple smaller tilesets, which could 
+                            happen concurrently, and only loaded the tilesets once on startup, allowing for faster transitioning 
+                            down the line. 
                         </p>
-                    </div>
-
-                    <div class="column"  style="margin: auto; display: block;">
-                        <img class="ui image" src="assets/map3.png" alt="Map story view example">
                     </div>
                 </div>
 
-                <div class="two column case_study row" style="background-color: #F5F5F5; padding: 10px !important; margin: 10px;">
-                    <div class="column">
-                        <h2>Prototyping</h2>
-                        <p>
-                          With our wireframe designed, I proceeded to prototyping the final layout. Because of the simplicity of the layout, 
-                          the prototyping mostly served as a way to think through layer hierarchy (what layers appear first? How do you toggle 
-                          through other layers?). We used these prototypes to collect another round of informal feedback from peers and friends, 
-                          leading to a few conclusions moving forward: <br><br>
-                          <b>1.</b> The response to our storytelling feature was very positive. People liked the guided interaction through the website 
-                          because it made the data less daunting to digest. <br><br>
-                          <b>2.</b> It’s not enough just to have the three types of exposures being toggled. How can we better contextualize this within
-                          other data from the city?<br><br>
-                          <b>3.</b> The initial base map color scheme (light grey and dark grey) is confusing because the water is darker than the land. 
-                          People did like the simplicity because it wouldn’t detract from the information.
-                        </p>
-                    </div>
-
-                    <div class="column"  style="margin: auto; display: block;">
-                        <img class="ui image" src="assets/map5.png" alt="">
-                    </div>
-                </div>
-
-                <div class="spacer" style="height: 15px;"></div>
+                <div class="spacer" style="height: 25px;"></div>
 
                 <div class="case_study row">
-                  <h2 class="ui header">Implementation</h2>
-                  <p>As the designer and developer, I had the opportunity to execute our vision and bring the design to life. 
-                    Over four months I built the website, which can be found <a style="text-decoration: underline; font-weight: bold; color: #A52E2A !important" href="https://ajchu28.github.io/mapwebsite/index.html">here</a>, 
-                    with Mapbox GL JS and Fomantic UI. The site 
-                    is currently hosted on Github Pages. I had some basic HTML and CSS experience preceding this project, but 
-                    hadn't worked extensively with Javascript, nor had I built a website from start to finish. Working on this 
-                    project not only enabled me to refine my UX skills, but also further solidified my understanding of the interplay 
-                    between design and implementation.</p>
-              </div>
-
-                <div class="case_study row">
-                    <h2 class="ui header">Impact</h2>
+                    <h2 class="ui header">So, what does this actually mean?</h2>
+                    <img class="ui centered image" src="assets/mapwide.png" style="padding-bottom: 20px;" alt="Philz Picture">
                     <p>
-                      I presented Visualizing Gentrification in Chicago: Uncovering Patterns of Social Mixing at the Spring 
-                      Undergraduate Research Symposium at the University of Chicago. This event provided valuable opportunities 
-                      to showcase the visualization, engage with the audience, and gather feedback. The insights gathered from 
-                      these interactions were incorporated into my subsequent thesis project, <a style="text-decoration: underline; font-weight: bold; color: #A52E2A !important" href="rideshare.html">Visualizing Chicago Rideshare Costs</a>.  
+                        Several weeks into the development of the map, Wenfei and I met and showed the map to some peers. With our 
+                        embeddedness in the data, we had failed to sufficiently explain what the map was showing, and how this mapped 
+                        back to gentrification. This led to the Exposure Data box and additional layers that a user could toggle on 
+                        or off overlaying the exposure data. With the addition of these two features, it better helped contextualize 
+                        the meaning of our metrics in more understandable terms as well as show how this relates to gentrification 
+                        for someone who is less familiar with the segregation and gentrification within the city of Chicago. 
+
+                        The final piece of the story was to comb through the visualized data and piece together stories. Wenfei 
+                        put together a miniature case study on Beverly vs. Washington Heights and the stories that the three 
+                        exposure metrics tell about the area. While there’s just one example, we envisioned this as a means by 
+                        which someone could have their “hand held” through the data set. After learning how to look at the data 
+                        set through a few examples, a user might be more able to peruse on their own and come to their own conclusions.
+                        
+                        <a style="text-decoration: underline; font-weight: bold; color: #A52E2A !important" href="rideshare.html">Visualizing Chicago Rideshare Costs</a>.  
                     </p>
                 </div>
 
-                <div class="spacer" style="height: 15px;"></div>
+                <div class="spacer" style="height: 25px;"></div>
+
+                <div class="case_study row">
+                    <h2 class="ui header">Key Realizations and Learnings</h2>
+                    <p>
+                        <ul class="ui list">
+                            <li>
+                                Design serves as a tool to transform obfuscated, inaccessible knowledge into formats that are easily 
+                                understandable and accessible to a wider audience
+                            </li>
+                            <li>
+                                Being the implementer of your own designs, or at least having a deeper understanding of what it 
+                                takes to bring the designs to life, will lead to a more seamless, rapid feedback and creation cycle. 
+                                This eventually leads to a clearer articulation of the vision, which is to the benefit of the end user.
+                            </li>
+                        </ul>
+                        
+                        <a style="text-decoration: underline; font-weight: bold; color: #A52E2A !important" href="rideshare.html">Visualizing Chicago Rideshare Costs</a>.  
+                    </p>
+                </div>
+
+                <div class="spacer" style="height: 25px;"></div>
+
+                <div class="case_study row">
+                    <h2 class="ui header">Project Link</h2>
+                </div>
+
+                <div class="case_study row" style="margin-top: -5px;">
+                    Find the map here! It’s worth noting that a few of the tilesets used have been deprecated, so 
+                    some of the layers no longer work.
+                    <br><br>
+                    Read Wenfei’s paper here.
+                </div>
+
+                <div class="spacer" style="height: 25px;"></div>
 
                 <div class="case_study row">
                     <h2 class="ui header">Team</h2>
